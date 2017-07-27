@@ -4,7 +4,8 @@
   "description": "generate map route",
   "main": "app.js",
   "scripts": {
-    "test": "mocha --compilers js:babel-core/register --recursive"
+    "test": "mocha --compilers js:babel-core/register --recursive",
+    "start": "./node_modules/.bin/webpack-dev-server --inline"
   },
   "repository": {
     "type": "git",
