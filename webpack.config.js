@@ -19,7 +19,10 @@ const webpackConfig = {
     			test: /\.js$/,
     			use: [
             {
-              loader: 'babel-loader'
+              loader: 'babel-loader',
+              options: {
+                ignore: '/node_modules/'
+              }
             }
           ]
   		  },
