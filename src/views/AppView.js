@@ -12,12 +12,15 @@ class AppView extends React.Component {
 
   render () {
     return (
+      <div>
+        OLOLO
       <GoogleMap
         defaultZoom={3}
         defaultCenter={{ lat: -25.363882, lng: 131.044922 }}
         googleMapURL={googleMapURL}
       >
       </GoogleMap>
+      </div>
     )
   }
 }
