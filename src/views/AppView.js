@@ -24,3 +24,5 @@ class AppView extends React.Component {
     )
   }
 }
+
+export default AppView;
