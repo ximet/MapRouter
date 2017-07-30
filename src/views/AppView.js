@@ -1,5 +1,8 @@
 import React from 'react';
-import { SimpleGoogleMap } from '../components/googleMap.jsx';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import { SimpleGoogleMap } from '../components/GoogleMap.jsx';
+import { Button } from '../components/Button.jsx';
+import { Input } from '../components/Input.jsx';
 
 class AppView extends React.Component {
     constructor(props) {
@@ -7,8 +10,10 @@ class AppView extends React.Component {
     }
 render() {
         return (
+          <MuiThemeProvider>
           <div style={{  height: `100%`, flex: 1 }}>
-            OLOLO
+            <Button />
+            <Input />
             <SimpleGoogleMap
               containerElement={
                 <div style={{ height: `100%` }} />
@@ -21,6 +26,7 @@ render() {
               onMarkerRightClick={()=>{}}
             />
           </div>
+          </MuiThemeProvider>
         )
     }
 }
