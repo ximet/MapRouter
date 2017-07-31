@@ -2,6 +2,7 @@ import React from 'react';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import { SimpleGoogleMap } from '../components/GoogleMap.jsx';
 import { Button } from '../components/Button.jsx';
+import { ActionButton } from '../components/ActionButton.jsx';
 import { Input } from '../components/Input.jsx';
 
 class AppView extends React.Component {
@@ -13,6 +14,7 @@ render() {
           <MuiThemeProvider>
           <div style={{  height: `100%`, flex: 1 }}>
             <Button />
+            <ActionButton />
             <Input />
             <SimpleGoogleMap
               containerElement={
