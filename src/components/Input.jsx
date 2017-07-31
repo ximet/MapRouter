@@ -9,6 +9,7 @@ export const Input = (props) => (
     value={props.value}
     type={props.type}
     disabled={props.disabled}
+    fullWidth={props.fullWidth}
    />
 );
 
@@ -18,6 +19,7 @@ Input.propTypes = {
     value: PropTypes.string,
     type: PropTypes.string,
     disabled: PropTypes.bool,
+    fullWidth: PropTypes.bool,
 };
 
 Input.defaultProps = {
@@ -25,5 +27,6 @@ Input.defaultProps = {
     errorText: '',
     value: '',
     type: 'text',
-    disabled: false
+    disabled: false,
+    fullWidth: true,
 };

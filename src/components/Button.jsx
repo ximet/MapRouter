@@ -7,18 +7,20 @@ export const Button = (props) => (
     label={props.label} 
     onTouchTap={props.onTouchTap}
     disabled={props.disabled}
+    fullWidth={props.fullWidth}
   />
 );
-
 
 Button.propTypes = {
     label: PropTypes.string,
     onTouchTap: PropTypes.func,
     disabled: PropTypes.bool,
+    fullWidth: PropTypes.bool,
 };
 
 Button.defaultProps = {
     onTouchTap: () => {},
     label: 'Default',
-    disabled: false
+    disabled: false,
+    fullWidth: true
 };
