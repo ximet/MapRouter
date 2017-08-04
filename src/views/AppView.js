@@ -18,10 +18,10 @@ render() {
             <Input />
             <SimpleGoogleMap
               containerElement={
-                <div style={{ height: `100%` }} />
+                <div style={{ height: `80%` }} />
               }
               mapElement={
-                <div style={{ height: `100%` }} />
+                <div style={{ height: `80%` }} />
               }
               onMapLoad={()=>{}}
               onMapClick={()=>{}}
