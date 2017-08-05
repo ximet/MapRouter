@@ -23,6 +23,7 @@ export const AppView = connect(appViewSelector, appViewActions)((props) => {
               onMapLoad={()=>{}}
               onMapClick={()=>{}}
               onMarkerRightClick={()=>{}}
+              markers = {props.markers}
           />
       </div>      
     )

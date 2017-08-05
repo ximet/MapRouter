@@ -8,5 +8,11 @@ export const SimpleGoogleMap = withGoogleMap(props => (
         { lat: -25.363882, lng: 131.044922 }
     }
    >
+    {props.markers.map(marker => (
+        <Marker
+            {...marker}
+            onRightClick={() => {}}
+        />
+        ))}
     </GoogleMap>
 ));
