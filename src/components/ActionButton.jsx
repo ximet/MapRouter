@@ -16,15 +16,18 @@ const getIcon = (iconClassName) => {
   }
 }
 
-export const ActionButton = (props) => (
-  <FloatingActionButton 
+export const ActionButton = (props) => {
+  
+  return <FloatingActionButton 
     onTouchTap={props.onTouchTap}
     disabled={props.disabled}
     secondary={props.secondary}
   >
     { getIcon(props.iconClassName) }
   </FloatingActionButton>
-);
+}
+  
+
 
 ActionButton.propTypes = {
     onTouchTap: PropTypes.func,
