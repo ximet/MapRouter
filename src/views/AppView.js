@@ -1,34 +1,28 @@
 import React from 'react';
+import { appViewActions } from '../actions/appViewActions.js';
+import { appViewSelector } from '../actions/appViewSelector.js';
 import { SimpleGoogleMap } from '../components/GoogleMap.jsx';
 import { Button } from '../components/Button.jsx';
 import { ActionButton } from '../components/ActionButton.jsx';
 import { Input } from '../components/Input.jsx';
 
-class AppView extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-render() {
-        return (
-          
-          <div style={{  height: `100%`, flex: 1 }}>
-            <Button />
-            <ActionButton />
-            <Input />
-            <SimpleGoogleMap
+export const AppView = connect(appViewSelector, appViewActions)((props) => {
+    return (
+      <div style={{  height: `100%`, flex: 1 }}>
+          <Button />
+          <ActionButton onTouchTap />
+          <Input />
+          <SimpleGoogleMap
               containerElement={
-                <div style={{ height: `80%` }} />
+                 <div style={{ height: `80%` }} />
               }
               mapElement={
-                <div style={{ height: `80%` }} />
+                 <div style={{ height: `80%` }} />
               }
               onMapLoad={()=>{}}
               onMapClick={()=>{}}
               onMarkerRightClick={()=>{}}
-            />
-          </div>
-        )
-    }
+          />
+      </div>      
+    )
 }
-
-export default AppView;
