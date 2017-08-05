@@ -1,12 +1,12 @@
 const prefixActions = 'APP_VIEW_';
 
-export const ACTIVE_MAP = `${prefixActions}ACTIVE_MAP`;
+export const SET_MARKER = `${prefixActions}SET_MARKER`;
 
 export const appViewActions = {
-    [ ACTIVE_MAP ]: (map) => ({
-        type: ACTIVE_MAP,
+    [ SET_MARKER ]: (marker) => ({
+        type: SET_MARKER,
         payload: {
-            map
+            marker
         }
     })
 };

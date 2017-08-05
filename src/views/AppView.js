@@ -1,6 +1,7 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import { appViewActions } from '../actions/appViewActions.js';
-import { appViewSelector } from '../actions/appViewSelector.js';
+import { appViewSelector } from '../selectors/appViewSelector.js';
 import { SimpleGoogleMap } from '../components/GoogleMap.jsx';
 import { Button } from '../components/Button.jsx';
 import { ActionButton } from '../components/ActionButton.jsx';
@@ -25,4 +26,4 @@ export const AppView = connect(appViewSelector, appViewActions)((props) => {
           />
       </div>      
     )
-}
+})

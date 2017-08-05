@@ -1,7 +1,7 @@
 import React from 'react';
 import { Provider } from 'react-redux';
 import ReactDOM from 'react-dom';
-import AppView from './views/AppView.js';
+import { AppView } from './views/AppView.js';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 
